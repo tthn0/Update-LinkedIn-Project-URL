@@ -6,7 +6,6 @@
     <h2>Update a Project's URL on LinkedIn (Tutorial)</h2>
 </div>
 
-
 > The Project URL field is not available for newly-added projects. To add a link to the Projects section, click/tap **Add media**, then select **Add a link**.
 > [(Source)](https://www.linkedin.com/help/linkedin/answer/a1516731)
 
@@ -19,7 +18,7 @@ As you can see from the above quote, LinkedIn recently removed the ability to ed
 />
 
 > [!WARNING]  
-> This guide was last updated on **Oct 1, 2023** and may get patched in the future. If it no longer works, please make an issue on this repository. After I review it, I'll archive this repository as needed.
+> This guide was last updated on **Jan 28, 2025** and may get patched in the future. If it no longer works, please make an issue on this repository. After I review it, I'll archive this repository as needed.
 
 > [!NOTE]  
 > This guide will use Firefox terminology, but feel free to adapt the following steps to your preferred browser.
@@ -81,7 +80,7 @@ As you can see from the above quote, LinkedIn recently removed the ability to ed
 7. Modify the JSON data:
    1. Change `/description` to `/url`.
    2. Update the value of `textInputValue` to the URL you want to add to your project.
-   3. Remove the `trackingId` key-value pair along with the comma that precedes it.
+   3. Remove the `trackingId` key-value pair along with the comma that follows it.
 8. After modifying the JSON data, you should have something like this:
 
    ```json
@@ -105,5 +104,6 @@ As you can see from the above quote, LinkedIn recently removed the ability to ed
 
 9.  Looking back in the `Network` tab, right click on the same `POST` request from earlier and click `Edit and Resend`.
 10. In the `Body` field that appears, paste the modified JSON data and click `Send`.
-11. ¡Voilà! Assuming you followed these steps correctly and LinkedIn hasn't patched this, the URL for your project should be updated now!
+11. Refresh the page.
+12. ¡Voilà! Assuming you followed these steps correctly and LinkedIn hasn't patched this, the URL for your project should be updated now!
 
